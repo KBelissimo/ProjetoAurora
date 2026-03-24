@@ -27,18 +27,18 @@
         {
             trackOxigenio = new TrackBar();
             lblPor = new Label();
-            ((System.ComponentModel.ISupportInitialize)trackOxigenio).BeginInit();
             label1 = new Label();
             numPotencia = new NumericUpDown();
             button1 = new Button();
             lblv = new Label();
+            ((System.ComponentModel.ISupportInitialize)trackOxigenio).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numPotencia).BeginInit();
             SuspendLayout();
             // 
             // trackOxigenio
             // 
             trackOxigenio.LargeChange = 1;
-            trackOxigenio.Location = new Point(315, 258);
+            trackOxigenio.Location = new Point(319, 258);
             trackOxigenio.Maximum = 100;
             trackOxigenio.Name = "trackOxigenio";
             trackOxigenio.Size = new Size(104, 45);
@@ -105,8 +105,8 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)trackOxigenio).EndInit();
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)trackOxigenio).EndInit();
             ((System.ComponentModel.ISupportInitialize)numPotencia).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -14,7 +14,7 @@ namespace ProjetoAurora
         }
 
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e) { }
 
         private void label1_Click(object sender, EventArgs e)
 
@@ -27,6 +27,7 @@ namespace ProjetoAurora
         {
             velocidadeTotal += (int)numPotencia.Value;
             lblv.Text = velocidadeTotal.ToString();
+        }
 
         private void trackOxigenio_Scroll(object sender, EventArgs e)
         {
