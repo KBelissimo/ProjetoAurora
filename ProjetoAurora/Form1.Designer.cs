@@ -49,8 +49,9 @@
             // lblPor
             // 
             lblPor.AutoSize = true;
+            lblPor.BackColor = SystemColors.ActiveCaptionText;
             lblPor.ForeColor = SystemColors.ButtonHighlight;
-            lblPor.Location = new Point(443, 258);
+            lblPor.Location = new Point(429, 269);
             lblPor.Name = "lblPor";
             lblPor.Size = new Size(0, 15);
             lblPor.TabIndex = 1;
