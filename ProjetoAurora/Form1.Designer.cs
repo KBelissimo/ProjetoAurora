@@ -2,9 +2,6 @@
 {
     partial class Form1
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
@@ -28,6 +25,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             label1 = new Label();
             numPotencia = new NumericUpDown();
             button1 = new Button();
@@ -70,12 +68,40 @@
             lblv.Name = "lblv";
             lblv.Size = new Size(0, 15);
             lblv.TabIndex = 3;
+
+            trackOxigenio = new TrackBar();
+            lblPor = new Label();
+            ((System.ComponentModel.ISupportInitialize)trackOxigenio).BeginInit();
+            SuspendLayout();
+            // 
+            // trackOxigenio
+            // 
+            trackOxigenio.LargeChange = 1;
+            trackOxigenio.Location = new Point(315, 258);
+            trackOxigenio.Maximum = 100;
+            trackOxigenio.Name = "trackOxigenio";
+            trackOxigenio.Size = new Size(104, 45);
+            trackOxigenio.TabIndex = 0;
+            trackOxigenio.Value = 10;
+            trackOxigenio.Scroll += trackOxigenio_Scroll;
+            // 
+            // lblPor
+            // 
+            lblPor.AutoSize = true;
+            lblPor.ForeColor = SystemColors.ButtonHighlight;
+            lblPor.Location = new Point(443, 258);
+            lblPor.Name = "lblPor";
+            lblPor.Size = new Size(0, 15);
+            lblPor.TabIndex = 1;
+            lblPor.Click += label1_Click;
+
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+
             Controls.Add(lblv);
             Controls.Add(button1);
             Controls.Add(numPotencia);
@@ -84,15 +110,27 @@
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)numPotencia).EndInit();
+
+            Controls.Add(lblPor);
+            Controls.Add(trackOxigenio);
+            Name = "Form1";
+            Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)trackOxigenio).EndInit();
+
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
+
         private Label label1;
         private NumericUpDown numPotencia;
         private Button button1;
         private Label lblv;
+
+        private TrackBar trackOxigenio;
+        private Label lblPor;
+
     }
 }
